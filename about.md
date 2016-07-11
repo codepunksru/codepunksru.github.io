@@ -1,15 +1,10 @@
 ---
 layout: page
-title: About
+title: История
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Давным давно, в далёкой-далёкой галактике собрались все самые крутые фрилансеры из программистов, дизайнеров, верстальщиков, проджектменеджеров, контентщиков, и организовали сообщество.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+С тех самых пор они проектируют, кодят и пишут тексты по самым прогрессивным методикам, используя самые свежие технологии.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
