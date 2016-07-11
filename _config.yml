@@ -9,7 +9,7 @@
 title: CodePunks
 email: oi@codepunks.ru
 description: > # this means to ignore newlines until "baseurl:"
-  Community of reliable digital professionals. Сообщество надежных профессионалов в сфере IT.
+  Community of reliable digital professionals. Сообщество надежных айтишников.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://codepunks.ru" # the base hostname & protocol for your site
 twitter_username: codepunksru
