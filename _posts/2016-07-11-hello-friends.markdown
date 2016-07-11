@@ -2,7 +2,7 @@
 layout: post
 title:  "Привет, друзья!"
 date:   2016-07-11 19:34:50 +0300
-categories: результаты
+categories: results
 ---
 Отныне сообщество самых мощных digital профи будет базироваться по адресу codepunks.ru
 
