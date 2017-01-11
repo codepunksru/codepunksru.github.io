@@ -43,9 +43,6 @@ $on-laptop:        800px;
     }
 }
 
-.site-title {
-  font-family: "Courier";
-}
 
 
 
@@ -55,3 +52,7 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.site-title {
+    font-family: "Courier";
+}
