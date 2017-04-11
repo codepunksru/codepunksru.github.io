@@ -1,27 +1,72 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+  <div class="container">
+    <div class="row top-logo">
+      <div class="col s4 m1">
+        <a href="{{ site.url }}">
+          <svg version="1.1" id="layer-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="148px" height="148px" viewBox="0 0 350 350" enable-background="new 0 0 350 350" xml:space="preserve" class="logo">
+          <g>
+          	<defs>
+          		<rect id="SVGID_1_" x="-122" y="-191.89" width="595.28" height="841.89"/>
+          	</defs>
+          	<clipPath id="SVGID_2_">
+          		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+          	</clipPath>
+          	<path clip-path="url(#SVGID_2_)" d="M243.436,160.371h-0.111v-22.062c0,0-0.006-50.783-42.166-65.282h-52.441
+          		c-19.002,7.35-41.81,26.188-41.81,65.282v22.232c-3.565,0.543-11.193,2.861-11.193,12.831v37.424c0,0,0.024,11.726,11.193,12.887
+          		h0.078v3.329c0,37.812,30.653,68.465,68.466,68.465s68.464-30.652,68.464-68.466c0-1.084-0.034-2.16-0.087-3.23
+          		c2.156-0.123,12.607-1.326,12.607-12.984v-37.424C256.436,173.371,256.436,160.371,243.436,160.371"/>
+          	<path clip-path="url(#SVGID_2_)" d="M291.039,314.149c-4.961-8.504-36.496-61.717-36.496-61.717s-14.582,57.571-78.896,57.571
+          		h-0.016c-64.314,0-78.896-57.571-78.896-57.571s-31.535,53.213-36.496,61.717s0.866,10.984,3.898,10.984h111.163h0.339h0.339
+          		h111.162C290.173,325.134,296,322.653,291.039,314.149"/>
+          	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M242.152,181.445c0-1.586,0.066-2.871-2.166-2.871
+          		c-0.014,0-0.686,0.004-0.701,0.004v-0.004h-1.229c-2.402-12.621-13.512-22.193-26.82-22.193c-11.652,0-21.619,7.339-25.533,17.636
+          		c-2.104-2.732-5.472-5.722-10.152-5.722c-4.473,0-7.687,2.671-9.757,5.245c-4.037-10.045-13.873-17.158-25.344-17.158
+          		c-13.309,0-24.419,9.573-26.821,22.193h-1.34v0.004c-0.014,0-0.686-0.004-0.701-0.004c-2.231,0-2.165,1.285-2.165,2.871
+          		c0,1.415,0.524,1.908,1.311,2.42l-0.003,0.004l2.498,1.896c1.066,14.091,12.862,25.232,27.221,25.232
+          		c15.058,0,27.308-12.25,27.308-27.31c0-1.498-0.126-2.967-0.36-4.399c0.958-1.896,3.73-6.494,8.153-6.494
+          		c5.029,0,8.061,6.076,8.622,7.295c-0.156,1.179-0.245,2.379-0.245,3.599c0,15.06,12.25,27.31,27.309,27.31
+          		c14.388,0,26.204-11.188,27.227-25.321l2.381-1.808l-0.003-0.004C241.627,183.354,242.152,182.86,242.152,181.445 M140.449,206.498
+          		c-12.577,0-22.808-10.232-22.808-22.81c0-12.576,10.231-22.808,22.808-22.808s22.808,10.232,22.808,22.808
+          		C163.257,196.266,153.026,206.498,140.449,206.498 M211.236,206.498c-12.576,0-22.809-10.232-22.809-22.81
+          		c0-12.576,10.232-22.808,22.809-22.808s22.807,10.232,22.807,22.808C234.043,196.266,223.812,206.498,211.236,206.498"/>
+          	<rect x="161.284" y="27.496" clip-path="url(#SVGID_2_)" width="26.929" height="105.449"/>
+          </g>
+          <g>
+          	<defs>
+          		<rect id="SVGID_3_" x="148.527" y="15.317" width="52.441" height="129.806"/>
+          	</defs>
+          	<clipPath id="SVGID_4_">
+          		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+          	</clipPath>
+          	<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M191.635,145.124h-33.773c-5.843,0-9.335-4.747-9.335-9.335V24.652
+          		c0-5.843,4.746-9.335,9.335-9.335h33.773c5.843,0,9.334,4.746,9.334,9.335v111.137
+          		C200.969,141.632,196.223,145.124,191.635,145.124 M161.527,132.124h26.441V28.317h-26.441V132.124z"/>
+          </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="{{ site.url }}" class="black-text">{% include title.html %}</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><p class="mob-menu">menu</p><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="black-text {% if page.id == "about"%}active-link{% endif %}" href="{{ "/about" | prepend: site.url }}">what we do</a></li>
+          <li><a class="black-text {% if page.id == "manifesto"%}active-link{% endif %}" href="{{ "/manifesto" | prepend: site.url }}">manifesto</a></li>
+          <li><a class="black-text {% if page.id == "clients"%}active-link{% endif %}" href="{{ "/clients" | prepend: site.url }}">clients</a></li>
+          <li><a class="black-text {% if page.id == "contacts"%}active-link{% endif %}" href="{{ "/contacts" | prepend: site.url }}">contacts</a></li>
+        </ul>
+        <ul class="side-nav toggle-menu" id="mobile-demo">
+          <li><h4 class="white-text">MENU</h4>
+            <i class="material-icons" id="close-menu">clear</i></li>
+          <li><a class="menu-link white-text" href="{{ "/about" | prepend: site.url }}">WHAT WE DO</a></li>
+          <li><a class="menu-link white-text" href="{{ "/manifesto" | prepend: site.url }}">MANIFESTO</a></li>
+          <li><a class="menu-link white-text" href="{{ "/clients" | prepend: site.url }}">CLIENTS</a></li>
+          <li><a class="menu-link white-text" href="{{ "/contacts" | prepend: site.url }}">CONTACTS</a></li>
+        </ul>
       </div>
     </nav>
-
   </div>
-
 </header>

@@ -2,18 +2,30 @@
 layout: default
 ---
 
-<div class="home">
-
-
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+<div class="hero">
+  <div class="row">
+    <div class="col s12 center">
+      <h4>TECH BURO & COMMUNITY FOR STARTUPS</h4>
+    </div>
+  </div>
 </div>
+
+<section class="description">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <p>You are an <span class="text-highlight">entrepreneur</span>.</p>
+        <p> <span class="text-highlight">Your goal</span> is to build a <span class="text-highlight">super awesome internet project</span>, right?</p>
+        <p>Correct. Here are the solutions we are <span class="text-highlight">ready to provide you</span> with:</p>
+        <ul class="advantages">
+          <li><i class="material-icons">done</i> Team of talented masters in <u>web development</u>, <u>design</u> and <u>copyright</u>.</li>
+          <li><i class="material-icons">done</i> <u>Experience</u> in launching new businesses, scaling and working with vast variety of technologies.</li>
+          <li><i class="material-icons">done</i> <u>Continous delivery</u> unit ready to improve your project as it evolves.</li>
+          <li><i class="material-icons">done</i> <u>Motivation</u> to build a market leader and the fanciest web-project ever, based on your needs.</li>
+          <li><i class="material-icons">done</i> 24/7 <u>Support and agility.</u></li>
+          <li><i class="material-icons">done</i> Startup strategy and venture finance <u>consulting</u> in case you need it.</li>
+        </ul>
+      </div>
+  </div>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Привет, друзья!"
 date:   2016-07-11 19:34:50 +0300
 categories: results

@@ -3,52 +3,251 @@
 ---
 @charset "utf-8"
 
-
-
 // Our variables
-$base-font-family: 'Noto Sans', Helvetica, Arial, sans-serif
+$base-font-family: 'Roboto Mono', Courier, monospace
 $base-font-size:   16px
 $base-font-weight: 400
 $small-font-size:  $base-font-size * 0.875
-$base-line-height: 1.5
+$base-line-height: 1.75
 
-$spacing-unit:     30px
+$spacing-unit:     12px
 
-$text-color:       #111
-$background-color: #fdfdfd
-$brand-color:      #2a7ae2
+$background-color: #fff
+$brand-color:      #212121
+$text-color:      #212121
 
-$grey-color:       #828282
-$grey-color-light: lighten($grey-color, 40%)
-$grey-color-dark:  darken($grey-color, 25%)
 
 // Width of the content area
-$content-width:    800px
+$content-width:    1024px
 
 $on-palm:          600px
 $on-laptop:        800px
 
+// Main classes
+
+body
+  display: flex
+  flex-direction: column
+  font-family: $base-font-family
+  font-size: $base-font-size
+  min-height: 100vh
+
+.divider
+  background-color: $brand-color
+  height: 2px
+
+h3
+  color: $brand-color!important
+  font-size: $base-font-size
+  font-weight: 700
+  text-transform: uppercase
+  @media screen and (max-width: $content-width)
+    font-weight: normal
+
+label
+  color: $brand-color!important
+
+main
+  flex: 1 0 auto
+
+p
+  @media screen and (max-width: $content-width)
+    font-size: $base-font-size * 0.875
+  @media screen and (max-width: $on-palm)
+    font-size: $base-font-size * 0.75
+
+pre
+  margin-top: 0
+
+.row
+  margin-bottom: 0
+
+// Helpers
+
+.text-highlight
+  font-weight: 700
+
+// Header
+
+.logo
+  @media screen and (max-width: $content-width)
+    height: 84px
+    margin-left: $spacing-unit+2
+    margin-top: $spacing-unit/3
+    width: 84px
+
+.site-title
+  display: inline-block
+  font-size: 1.5rem
+  font-weight: 700
+  margin-top: 1.3rem
+  padding-left: $spacing-unit+2
+  @media screen and (max-width: $content-width)
+    font-size: 1.2rem
+    padding-left: $spacing-unit
+
+.top-logo
+  margin-bottom: 0
+
+// Navigation
+
+.active-link
+  font-weight: 700
+  text-decoration: underline
+
+nav
+  box-shadow: none
+  .button-collapse
+    float: right
+    i
+      margin-right: -8px
+      margin-top: 2px
+
+nav ul a
+  font-size: $base-font-size
+  padding: 0 12px
+  &:hover
+    background-color: #fff
+    text-decoration: underline
+
+// Mobile Navigation
+a.button-collapse
+  display: inline-flex
+
+#close-menu
+  font-size: 36px
+  position: absolute
+  top: $spacing-unit
+  right: $spacing-unit*2
 
 
-// Use media queries like this:
- -// @include media-query($on-palm) {
- -//     .wrapper {
- -//         padding-right: $spacing-unit / 2
- -//         padding-left: $spacing-unit / 2
- -//     }
- -// }
- -@mixin media-query($device) {
- -    @media screen and (max-width: $device) {
- -        @content
- -    }
- -}
- -
- -
- -
- -
- -// Import partials from `sass_dir` (defaults to `_sass`)
- -@import
- -        "base",
- -        "layout",
- -        "syntax-highlighting"
- -;
+.menu-link
+  text-decoration: underline
+
+#mobile-demo
+  text-align: center
+  h4
+    margin-top: $spacing-unit*2
+  a
+    font-size: 1.5rem
+    font-weight: lighter
+
+.mob-menu
+  font-size: 1.2rem
+  font-weight: 700
+  margin: 0
+  margin-right: $spacing-unit
+
+.side-nav
+  background-color: rgba(0, 0, 0, 0.7)
+  width: 100%
+
+// Hero + Sub-navigation
+
+.hero h4
+  font-size: $base-font-size * 1.5
+  margin: $spacing-unit * 3
+  @media screen and (max-width: $content-width)
+    font-size: $base-font-size * 1.5
+    margin: $spacing-unit * 2
+
+.hero-tabs
+  margin: $spacing-unit * 3
+
+.tabs .tab a
+  font-size: $base-font-size
+  @media screen and (max-width: $content-width)
+  font-size: 14px
+
+.tab a.active
+  @media screen and (max-width: $content-width)
+    border-bottom: 2px $brand-color solid
+
+.tab-content
+  margin: $spacing-unit * 3
+  @media screen and (max-width: $content-width)
+    margin: 0
+
+.tabs .indicator
+  background-color: $brand-color
+  @media screen and (max-width: $content-width)
+    display: none
+
+ul.tabs.tabs-fixed-width
+  @media screen and (max-width: $on-palm)
+    display: block
+    overflow-x: visible
+    overflow-y: visible
+
+// Main content area
+
+.advantages
+  line-height: 1.75
+  margin-top: $spacing-unit * 3
+  li
+    margin-bottom: $spacing-unit
+  @media screen and (max-width: $content-width)
+    font-size: $base-font-size * 0.875
+    margin-top: $spacing-unit * 2
+    .material-icons
+      font-size: 16px
+  @media screen and (max-width: $on-palm)
+    font-size: $base-font-size * 0.75
+    .material-icons
+      font-size: 14px
+
+.advantages .material-icons
+  position: relative
+  top: 5px
+  @media screen and (max-width: $content-width)
+    top: 3px
+
+.contacts
+  margin-bottom: $spacing-unit * 2
+
+.contacts a
+  color: $brand-color
+  text-decoration: underline
+
+.description
+  margin: $spacing-unit 0 0 $spacing-unit * 1.4
+  p:first-child
+    margin-top: 0
+
+.description.about, .description.manifesto
+  margin: $spacing-unit * 3
+
+.description.clients, .description.contact-us
+  margin: 0 0 $spacing-unit * 3 0
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating)
+  color: $brand-color
+  text-decoration: underline
+  &:hover
+    color: black
+
+.card-content a
+  color: $brand-color
+  text-decoration: underline
+
+textarea.materialize-textarea:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=text]:focus:not([readonly])
+  border-bottom: 1px solid $brand-color
+  box-shadow: 0 1px 0 0 $brand-color
+
+// Footer
+
+.contact-info
+  display: block
+  margin-top: 14px
+  a
+    color: $brand-color
+    text-decoration: underline
+  &:last-child
+    margin-bottom: $spacing-unit * 2
+    @media screen and (max-width: $content-width)
+      margin-bottom: $spacing-unit * 3
+
+.material-icons.address-icon
+  display: inline-block
+  position: relative
+  top: 6px
